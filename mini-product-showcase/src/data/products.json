@@ -1,0 +1,179 @@
+[
+  {
+    "id": "prod-001",
+    "name": "AeroTune Max Wireless Headphones",
+    "slug": "aerotune-max-wireless-headphones",
+    "tagline": "Studio-grade acoustics with hybrid active noise cancellation.",
+    "description": "Experience uncompromised sound fidelity with custom-tuned 45mm dynamic drivers. Engineered with intelligent hybrid ANC and ultra-plush memory foam earcups for all-day listening sessions.",
+    "price": 299.99,
+    "originalPrice": 349.99,
+    "rating": 4.9,
+    "reviewCount": 128,
+    "category": "Headphones",
+    "isFeatured": true,
+    "inStock": true,
+    "images": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=800&q=80"
+    ],
+    "specs": {
+      "connectivity": "Bluetooth 5.3 & 3.5mm AUX",
+      "batteryLife": "Up to 50 hours (ANC off)",
+      "weight": "260g",
+      "warranty": "2 Years Limited",
+      "noiseCancellation": true,
+      "waterResistance": "IPX4 splash resistant"
+    },
+    "features": [
+      "Hybrid Active Noise Cancellation",
+      "45mm Titanium-Coated Drivers",
+      "Multipoint Connection Support",
+      "Fast Charging: 10 mins gives 5 hours"
+    ]
+  },
+  {
+    "id": "prod-002",
+    "name": "PulseBuds Pro ANC",
+    "slug": "pulsebuds-pro-anc",
+    "tagline": "Pocket-sized punch with adaptive ambient transparency.",
+    "description": "True wireless earbuds built for active lifestyles. Featuring IPX7 sweatproofing, crystal-clear quad-mic beamforming, and seamless touch controls.",
+    "price": 149.99,
+    "originalPrice": 179.99,
+    "rating": 4.7,
+    "reviewCount": 94,
+    "category": "Earbuds",
+    "isFeatured": true,
+    "inStock": true,
+    "images": [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "specs": {
+      "connectivity": "Bluetooth 5.3",
+      "batteryLife": "8 hours (32 hours with case)",
+      "weight": "48g (with case)",
+      "warranty": "1 Year",
+      "noiseCancellation": true,
+      "waterResistance": "IPX7 waterproof"
+    },
+    "features": [
+      "Adaptive Ambient Transparency Mode",
+      "Wireless Qi Charging Case",
+      "Low Latency Gaming Mode",
+      "Quad-mic ENC for crystal clear calls"
+    ]
+  },
+  {
+    "id": "prod-003",
+    "name": "SonicSphere 360 Speaker",
+    "slug": "sonicsphere-360-speaker",
+    "tagline": "Room-filling 360° omnidirectional sound with deep bass radiators.",
+    "description": "Crafted with premium anodized aluminum and acoustic fabric. The SonicSphere delivers immersive sound balance whether placed in the center of a living room or by the pool.",
+    "price": 199.99,
+    "originalPrice": 229.99,
+    "rating": 4.8,
+    "reviewCount": 76,
+    "category": "Speakers",
+    "isFeatured": true,
+    "inStock": true,
+    "images": [
+      "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80"
+    ],
+    "specs": {
+      "connectivity": "Bluetooth 5.2, Wi-Fi, AirPlay 2",
+      "batteryLife": "20 hours playback",
+      "weight": "950g",
+      "warranty": "2 Years",
+      "noiseCancellation": false,
+      "waterResistance": "IP67 dust and water resistant"
+    },
+    "features": [
+      "Dual Passive Radiators for Deep Bass",
+      "Stereo Pair Sync with Second Unit",
+      "Integrated Voice Assistant Support"
+    ]
+  },
+  {
+    "id": "prod-004",
+    "name": "Apex Wireless Charging Stand",
+    "slug": "apex-wireless-charging-stand",
+    "tagline": "3-in-1 fast charging station crafted in machined aluminum.",
+    "description": "Power your phone, earbuds, and smartwatch concurrently with optimized 15W Qi-certified induction coils and clean cable management.",
+    "price": 79.99,
+    "rating": 4.6,
+    "reviewCount": 52,
+    "category": "Accessories",
+    "isFeatured": false,
+    "inStock": true,
+    "images": [
+      "https://images.unsplash.com/photo-1622445262464-84b1456045b6?auto=format&fit=crop&w=800&q=80"
+    ],
+    "specs": {
+      "connectivity": "USB-C Power Delivery",
+      "weight": "310g",
+      "warranty": "1 Year",
+      "waterResistance": "N/A"
+    },
+    "features": [
+      "15W Fast Wireless Output",
+      "Magnetic Snap Alignment",
+      "Overheat & Surge Protection"
+    ]
+  },
+  {
+    "id": "prod-005",
+    "name": "Clarity Studio Boom Mic",
+    "slug": "clarity-studio-boom-mic",
+    "tagline": "Broadcast-grade condenser microphone with USB-C DSP processing.",
+    "description": "Designed for podcasters, streamers, and remote professionals needing crisp 24-bit/96kHz sound capture with hardware gain control and real-time headphone monitoring.",
+    "price": 129.99,
+    "originalPrice": 149.99,
+    "rating": 4.7,
+    "reviewCount": 41,
+    "category": "Accessories",
+    "isFeatured": false,
+    "inStock": true,
+    "images": [
+      "https://images.unsplash.com/photo-1590658006821-04f4008d5717?auto=format&fit=crop&w=800&q=80"
+    ],
+    "specs": {
+      "connectivity": "USB-C, 3.5mm Headphone Jack",
+      "weight": "420g",
+      "warranty": "2 Years",
+      "waterResistance": "N/A"
+    },
+    "features": [
+      "Cardioid & Omnidirectional Polar Patterns",
+      "Built-in Pop Filter and Shock Mount",
+      "Zero-latency Monitoring Port"
+    ]
+  },
+  {
+    "id": "prod-006",
+    "name": "SoundBar Compact Cinema",
+    "slug": "soundbar-compact-cinema",
+    "tagline": "Dolby Atmos sound bar for crystal-clear TV dialog and gaming audio.",
+    "description": "Compact footprint engineered with built-in subwoofers, HDMI eARC support, and dedicated voice enhancement sound profiles.",
+    "price": 249.99,
+    "rating": 4.5,
+    "reviewCount": 63,
+    "category": "Speakers",
+    "isFeatured": true,
+    "inStock": false,
+    "images": [
+      "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80"
+    ],
+    "specs": {
+      "connectivity": "HDMI eARC, Optical, Bluetooth 5.0",
+      "weight": "1.8kg",
+      "warranty": "1 Year",
+      "noiseCancellation": false,
+      "waterResistance": "N/A"
+    },
+    "features": [
+      "Dolby Atmos Virtual Processing",
+      "Night Listening Mode",
+      "Dedicated Dialogue Boost Algorithm"
+    ]
+  }
+]
