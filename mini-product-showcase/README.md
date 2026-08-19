@@ -34,7 +34,7 @@ A high-performance, responsive e-commerce product showcase built with **Next.js 
 
 ```bash
 # 1. Clone the repository
-git clone [https://github.com/Shaikateeqahmed/Revalsys_Technologies_Assignment/tree/main/mini-product-showcase]
+git clone https://github.com/Shaikateeqahmed/Revalsys_Technologies_Assignment.git
 cd mini-product-showcase
 
 # 2. Install dependencies
