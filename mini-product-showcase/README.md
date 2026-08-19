@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AeroAudio — Mini Product Showcase Website
 
-## Getting Started
+A high-performance, responsive e-commerce product showcase built with **Next.js (App Router)**, **TypeScript**, and **Tailwind CSS**. Designed and developed as part of the technical evaluation for the **Angular & Next.js Developer** position at **Revalsys Technologies**.
 
-First, run the development server:
+---
+
+## 🚀 Live Demo & Repository
+
+- **Live Deployment:** [https://aeroaudio-showcase.vercel.app](https://aeroaudio-showcase.vercel.app) _(Replace with your deployment link)_
+- **Source Code Repository:** [GitHub Repository URL](https://github.com/your-username/mini-product-showcase)
+
+---
+
+## 🛠️ Tech Stack & Tooling
+
+| Domain               | Technology                 | Purpose                                                       |
+| :------------------- | :------------------------- | :------------------------------------------------------------ |
+| **Framework**        | Next.js 14/15 (App Router) | Server Components, hybrid rendering, and dynamic routing      |
+| **Language**         | TypeScript                 | Strict type safety, interfaces, and maintainability           |
+| **Styling**          | Tailwind CSS               | Utility-first responsive design and micro-interactions        |
+| **State Management** | React Context API          | Client state for Cart and Auth/Guest persistence              |
+| **Code Quality**     | ESLint + Prettier          | Consistent style guide and Tailwind class auto-sorting        |
+| **Images**           | `next/image`               | Automated WebP conversion, responsive sizes, and lazy loading |
+
+---
+
+## 📦 Project Setup Instructions
+
+### Prerequisites
+
+- **Node.js**: `v18.17.0` or higher
+- **npm**, **yarn**, or **pnpm**
+
+### Installation & Local Run
 
 ```bash
+# 1. Clone the repository
+git clone [https://github.com/your-username/mini-product-showcase.git](https://github.com/your-username/mini-product-showcase.git)
+cd mini-product-showcase
+
+# 2. Install dependencies
+npm install
+
+# 3. Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Production Build & Typecheck
+npm run build
+
+# Start Production Server
+npm run start
+
+# Code Formatting (Prettier)
+npm run format
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features Implemented
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1. Home Page (`/`)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Hero Section:** Value proposition, high-impact CTA, and decorative background styling.
+- **Category Navigation:** Direct filter tiles for Headphones, Earbuds, and Speakers.
+- **Featured Releases Grid:** Server-rendered flagship products.
+- **Trust Elements:** Value badges highlighting shipping, warranty, and return policies.
 
-## Learn More
+### 2. Product Listing & Filtering (`/products`)
 
-To learn more about Next.js, take a look at the following resources:
+- **Real-Time Search:** Client-side fuzzy text filtering across product titles and tags.
+- **Category Filter:** Multi-category selector syncing with URL search parameters.
+- **Price Range Filter:** Interactive slider filtering products up to $350.
+- **Sorting Mechanisms:** Sort by Featured, Price (Low to High), Price (High to Low), and Rating.
+- **Stock Availability Filter:** Toggle for immediately available hardware.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3. Dynamic Product Detail Page (`/products/[id]`)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Dynamic Routing & SSG:** Powered by `generateStaticParams` for pre-rendering.
+- **Dynamic SEO Metadata:** Automated OpenGraph and meta descriptions per item via `generateMetadata`.
+- **Interactive Image Gallery:** Multi-angle image preview switcher.
+- **Technical Specification Matrix:** Key-value breakdown of acoustics, connectivity, and battery.
+- **Quantity Selector & Add to Cart:** Real-time subtotal calculator with interactive feedback toast.
 
-## Deploy on Vercel
+### 4. Shopping Cart & Order Summary (`/cart`)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Persistent State:** Synchronized with `localStorage` (SSR hydration safe).
+- **Cart Operations:** Item quantity increments/decrements, item deletion, and clear cart.
+- **Order Calculation:** Automated item counts, 8% tax calculation, and free shipping thresholds ($150+).
+- **Checkout Guard:** Context-aware routing prompting non-authenticated users to log in or checkout as a guest.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 5. Authentication & Guest Handling (`/login`)
+
+- **User Authentication:** Email and password login simulation.
+- **Instant Guest Checkout:** Allows immediate checkout without requiring registration.
+- **Redirect Support:** Retains referral path (`?redirect=/cart`) to preserve user workflow.
+
+### 6. About Us & Contact Page (`/about`)
+
+- **Brand Standards:** Overview of acoustic engineering philosophy and design principles.
+- **Interactive Contact Form:** Client-side validation, inquiry topic selection, and submission confirmations.
+
+---
+
+## 🏛️ Architectural Decisions
+
+- **Next.js App Router & Hybrid Rendering:**
+  - Server Components (`RSC`) are used by default across pages (`/`, `/products`, `/about`) to optimize Time to First Byte (TTFB) and search engine indexing.
+  - Client components are isolated strictly where interactivity is required (`ProductListContent`, `ProductDetailView`, `CartView`, `AuthView`).
+
+- **Decoupled State Management:**
+  - React Context is separated into domain-specific providers (`CartContext` and `AuthContext`) wrapped under an `AppProviders` abstraction layer to prevent unnecessary re-renders.
+  - Initial state hydration uses safe `useEffect` mounting cycles to avoid React hydration mismatches with `localStorage`.
+
+- **SEO Best Practices & Semantic Architecture:**
+  - Strict heading hierarchy across all routes (`h1` for primary title, `h2` for section demarcations, `h3` for product/feature titles).
+  - Global layout metadata combined with granular `generateMetadata` exports on dynamic product routes.
+  - Fully semantic HTML structure using `<header>`, `<main>`, `<section>`, `<article>`, `<nav>`, `<aside>`, and `<footer>`.
+
+---
+
+## 🤖 AI Tools & Platforms Utilized
+
+In accordance with the assignment guidelines, AI-assisted workflows were utilized to accelerate development:
+
+- **Architecture & Scaffolding:** Gemini Pro were used to structure the initial folder layout, TypeScript interface schema, and realistic mock dataset (`products.json`).
+- **CSS & Responsive Layouts:** AI prompts assisted in generating Tailwind CSS responsive grid compositions, mobile filter drawer states, and interactive hover transitions.
+- **Documentation & Testing Plan:** AI-assisted validation for edge-case scenarios (e.g., zero-quantity cart handling, SSR hydration mismatch prevention, and query param synchronization).
+
+---
+
+## 📌 Assumptions & Limitations
+
+- **Data Source:** Static JSON dataset (`src/data/products.json`) is used in place of an external REST/GraphQL API.
+- **Authentication Simulation:** User and Guest sessions are persisted in browser `localStorage` without backend JWT verification.
+- **Checkout Flow:** Payment integration is simulated with interactive confirmation states.
