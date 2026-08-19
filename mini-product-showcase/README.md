@@ -6,8 +6,7 @@ A high-performance, responsive e-commerce product showcase built with **Next.js 
 
 ## 🚀 Live Demo & Repository
 
-- **Live Deployment:** [https://aeroaudio-showcase.vercel.app](https://aeroaudio-showcase.vercel.app) _(Replace with your deployment link)_
-- **Source Code Repository:** [GitHub Repository URL](https://github.com/your-username/mini-product-showcase)
+- **Source Code Repository:** [GitHub Repository URL](https://github.com/Shaikateeqahmed/Revalsys_Technologies_Assignment/tree/main/mini-product-showcase)
 
 ---
 
@@ -35,7 +34,7 @@ A high-performance, responsive e-commerce product showcase built with **Next.js 
 
 ```bash
 # 1. Clone the repository
-git clone [https://github.com/your-username/mini-product-showcase.git](https://github.com/your-username/mini-product-showcase.git)
+git clone [https://github.com/Shaikateeqahmed/Revalsys_Technologies_Assignment/tree/main/mini-product-showcase]
 cd mini-product-showcase
 
 # 2. Install dependencies
