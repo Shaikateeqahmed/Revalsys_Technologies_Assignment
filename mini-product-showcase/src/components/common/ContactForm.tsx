@@ -105,7 +105,7 @@ export const ContactForm: React.FC = () => {
 
       <button
         type="submit"
-        className="w-full rounded-lg bg-indigo-600 py-2.5 text-xs font-semibold text-white shadow-sm transition hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-indigo-600"
+        className="w-full rounded-lg bg-indigo-600 py-2.5 text-xs font-semibold text-white shadow-sm transition hover:cursor-pointer hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-indigo-600"
       >
         Submit Message
       </button>
