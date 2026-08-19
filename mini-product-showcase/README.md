@@ -131,3 +131,33 @@ In accordance with the assignment guidelines, AI-assisted workflows were utilize
 - **Data Source:** Static JSON dataset (`src/data/products.json`) is used in place of an external REST/GraphQL API.
 - **Authentication Simulation:** User and Guest sessions are persisted in browser `localStorage` without backend JWT verification.
 - **Checkout Flow:** Payment integration is simulated with interactive confirmation states.
+
+---
+
+## Prompts written to complate the Assignment
+
+- I got the mail regarding coding Assignment, below is the mail
+  I have given the complete content of mail.
+  lets start with the scratch, I want to do step by step. 1st let start with the whole assignment into steps for better development.
+
+- Please also configure the prettier
+
+- Let's create the TypeScript interfaces and mock JSON dataset for our product showcase.
+
+- Let's build the CartContext and AuthContext state managers with localStorage persistence.
+
+- Let's build the Root Layout with SEO metadata, Navbar, and Footer components.
+
+- Let's build the Home Page with the Hero section, category tiles, and Featured Products.
+
+- Let's build the Product Listing Page with search, category filtering, and price sorting.
+
+- Let's build the dynamic product detail page with image gallery, specs, dynamic SEO, and Add to Cart.
+
+- Let's build the Cart Page with item management and Order Summary.
+
+- Let's build the Login and Guest User Handling page.
+
+- Let's build the About Us and Contact Us page.
+
+- Let's generate the complete submission README.md covering setup instructions, architectural decisions, SEO, and AI tooling.
