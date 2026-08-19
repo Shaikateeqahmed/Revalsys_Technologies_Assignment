@@ -77,7 +77,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <button
             onClick={() => addToCart(product, 1)}
             disabled={!product.inStock}
-            className="rounded-lg bg-indigo-600 px-3.5 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-indigo-700 disabled:cursor-not-allowed disabled:bg-slate-300"
+            className="rounded-lg bg-indigo-600 px-3.5 py-2 text-xs font-semibold text-white shadow-sm transition hover:cursor-pointer hover:bg-indigo-700 disabled:cursor-not-allowed disabled:bg-slate-300"
             aria-label={`Add ${product.name} to cart`}
           >
             {product.inStock ? 'Add to Cart' : 'Unavailable'}

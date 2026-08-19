@@ -166,7 +166,7 @@ export const AuthView: React.FC = () => {
         <button
           type="button"
           onClick={handleGuestAccess}
-          className="flex w-full items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white py-2.5 text-xs font-semibold text-slate-700 shadow-sm transition hover:bg-slate-50"
+          className="flex w-full items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white py-2.5 text-xs font-semibold text-slate-700 shadow-sm transition hover:cursor-pointer hover:bg-slate-50"
         >
           <svg
             className="h-4 w-4 text-slate-500"

@@ -142,7 +142,7 @@ export const ProductListContent: React.FC<ProductListContentProps> = ({ initialP
               id="sort"
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as SortOption)}
-              className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-medium text-slate-700 focus:border-indigo-500 focus:outline-none"
+              className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-medium text-slate-700 hover:cursor-pointer focus:border-indigo-500 focus:outline-none"
             >
               <option value="featured">Featured First</option>
               <option value="price-asc">Price: Low to High</option>
@@ -166,7 +166,7 @@ export const ProductListContent: React.FC<ProductListContentProps> = ({ initialP
             </h2>
             <button
               onClick={resetFilters}
-              className="text-xs font-medium text-indigo-600 hover:text-indigo-500"
+              className="text-xs font-medium text-indigo-600 hover:cursor-pointer hover:text-indigo-500"
             >
               Reset
             </button>
@@ -182,7 +182,7 @@ export const ProductListContent: React.FC<ProductListContentProps> = ({ initialP
                 <button
                   key={cat}
                   onClick={() => handleCategoryChange(cat)}
-                  className={`flex items-center justify-between rounded-md px-2.5 py-1.5 text-left text-xs font-medium transition-colors ${
+                  className={`flex items-center justify-between rounded-md px-2.5 py-1.5 text-left text-xs font-medium transition-colors hover:cursor-pointer ${
                     selectedCategory === cat
                       ? 'bg-indigo-50 font-bold text-indigo-600'
                       : 'text-slate-600 hover:bg-slate-50'
@@ -225,7 +225,7 @@ export const ProductListContent: React.FC<ProductListContentProps> = ({ initialP
                 type="checkbox"
                 checked={inStockOnly}
                 onChange={(e) => setInStockOnly(e.target.checked)}
-                className="h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
+                className="h-4 w-4 rounded border-slate-300 text-indigo-600 hover:cursor-pointer focus:ring-indigo-500"
               />
               <span>In Stock Items Only</span>
             </label>

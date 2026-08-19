@@ -105,7 +105,7 @@ export const CartView: React.FC = () => {
               </span>
               <button
                 onClick={clearCart}
-                className="text-xs font-medium text-red-600 transition hover:text-red-700"
+                className="text-xs font-medium text-red-600 transition hover:cursor-pointer hover:text-red-700"
               >
                 Clear Cart
               </button>
@@ -180,9 +180,9 @@ export const CartView: React.FC = () => {
               {/* Checkout Action */}
               <button
                 onClick={handleProceedToCheckout}
-                className="mt-5 w-full rounded-lg bg-indigo-600 py-3 text-xs font-semibold text-white shadow-sm transition hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-indigo-600"
+                className="mt-5 w-full rounded-lg bg-indigo-600 py-3 text-xs font-semibold text-white shadow-sm transition hover:cursor-pointer hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-indigo-600"
               >
-                {user ? 'Complete Demo Order' : 'Proceed to Checkout'}
+                {user ? 'Complete Order' : 'Proceed to Checkout'}
               </button>
 
               <p className="mt-3 text-center text-[10px] text-slate-400">

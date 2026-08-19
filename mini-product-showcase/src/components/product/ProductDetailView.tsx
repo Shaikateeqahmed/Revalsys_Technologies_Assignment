@@ -82,7 +82,7 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({ product })
                     alt={`${product.name} thumbnail ${idx + 1}`}
                     fill
                     sizes="80px"
-                    className="object-cover"
+                    className="object-cover hover:scale-105 hover:cursor-pointer"
                   />
                 </button>
               ))}
@@ -168,7 +168,7 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({ product })
                   <button
                     onClick={() => setQuantity((q) => Math.max(1, q - 1))}
                     disabled={quantity <= 1 || !product.inStock}
-                    className="px-3 py-2 text-sm font-bold text-slate-600 hover:bg-slate-50 disabled:opacity-40"
+                    className="px-3 py-2 text-sm font-bold text-slate-600 hover:cursor-pointer hover:bg-slate-50 disabled:opacity-40"
                     aria-label="Decrease quantity"
                   >
                     -
@@ -179,7 +179,7 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({ product })
                   <button
                     onClick={() => setQuantity((q) => q + 1)}
                     disabled={!product.inStock}
-                    className="px-3 py-2 text-sm font-bold text-slate-600 hover:bg-slate-50 disabled:opacity-40"
+                    className="px-3 py-2 text-sm font-bold text-slate-600 hover:cursor-pointer hover:bg-slate-50 disabled:opacity-40"
                     aria-label="Increase quantity"
                   >
                     +
@@ -189,7 +189,7 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({ product })
                 <button
                   onClick={handleAddToCart}
                   disabled={!product.inStock}
-                  className="flex-1 rounded-lg bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-700 disabled:cursor-not-allowed disabled:bg-slate-300"
+                  className="flex-1 rounded-lg bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:cursor-pointer hover:bg-indigo-700 disabled:cursor-not-allowed disabled:bg-slate-300"
                 >
                   {product.inStock
                     ? `Add to Cart • $${(product.price * quantity).toFixed(2)}`

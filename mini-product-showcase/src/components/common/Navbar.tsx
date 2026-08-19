@@ -155,7 +155,10 @@ export const Navbar: React.FC = () => {
                   <span className="text-xs text-slate-500">
                     Logged in as <strong className="text-slate-800">{user.name}</strong>
                   </span>
-                  <button onClick={logout} className="text-xs font-medium text-red-600">
+                  <button
+                    onClick={logout}
+                    className="text-xs font-medium text-red-600 hover:cursor-pointer"
+                  >
                     Logout
                   </button>
                 </>

@@ -53,7 +53,7 @@ export const CartItemRow: React.FC<CartItemRowProps> = ({ item }) => {
         <div className="flex items-center rounded-lg border border-slate-200 bg-white">
           <button
             onClick={() => updateQuantity(product.id, quantity - 1)}
-            className="px-2.5 py-1 text-xs font-bold text-slate-600 hover:bg-slate-50"
+            className="px-2.5 py-1 text-xs font-bold text-slate-600 hover:cursor-pointer hover:bg-slate-50"
             aria-label="Decrease quantity"
           >
             -
@@ -61,7 +61,7 @@ export const CartItemRow: React.FC<CartItemRowProps> = ({ item }) => {
           <span className="w-8 text-center text-xs font-semibold text-slate-800">{quantity}</span>
           <button
             onClick={() => updateQuantity(product.id, quantity + 1)}
-            className="px-2.5 py-1 text-xs font-bold text-slate-600 hover:bg-slate-50"
+            className="px-2.5 py-1 text-xs font-bold text-slate-600 hover:cursor-pointer hover:bg-slate-50"
             aria-label="Increase quantity"
           >
             +
@@ -78,7 +78,7 @@ export const CartItemRow: React.FC<CartItemRowProps> = ({ item }) => {
         {/* Remove Button */}
         <button
           onClick={() => removeFromCart(product.id)}
-          className="p-1 text-slate-400 transition-colors hover:text-red-600"
+          className="p-1 text-slate-400 transition-colors hover:cursor-pointer hover:text-red-600"
           aria-label={`Remove ${product.name} from cart`}
         >
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
